@@ -89,7 +89,7 @@ int main(int argc, char **argv) {
 			
 
 
-			std::cout << "Mem groesse : " << i << std::endl;
+			std::cout << "memory size : " << i << std::endl;
 
 			int mem [i * 266] = {};
 			
@@ -129,7 +129,7 @@ int main(int argc, char **argv) {
 				} else if (orders[o] == 44){
 				
 					char temp ;
-					std::cout << "Input bei " << i << ": ";
+					std::cout << "Input at " << i << ": ";
 					std::cin >> temp;
 					
 					mem[i] = int(temp);
