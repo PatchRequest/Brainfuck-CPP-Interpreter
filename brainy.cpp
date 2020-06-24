@@ -83,15 +83,15 @@ int main(int argc, char **argv) {
 
 
 
-			int orders[arr.size()];
+			std::vector<int>orders(arr.size());
 
-    		std::copy(arr.begin(), arr.end() , orders);
+    		std::copy(arr.begin(), arr.end() , orders.begin());
 			
 
 
 			std::cout << "memory size : " << i << std::endl;
 
-			int mem [i * 266] = {};
+			std::vector<int>mem(i * 266);
 			
 			i = 0;
 			
@@ -136,7 +136,7 @@ int main(int argc, char **argv) {
 
 				} else if (orders[o] == 91){
 					if (mem[i] == 0){
-						o = findClosing(orders,o);
+						o = findClosing(orders.data(),o);
 						
 					}
 									
@@ -146,14 +146,11 @@ int main(int argc, char **argv) {
 					
 					if (mem[i] != 0){
 						
-						o = findOpening(orders,o);
+						o = findOpening(orders.data(),o);
 						
 					}
 					
 				}
-
-
-
 
 			}
 		return 0;
