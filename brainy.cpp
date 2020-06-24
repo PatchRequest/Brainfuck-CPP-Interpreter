@@ -64,7 +64,7 @@ int main(int argc, char **argv) {
 
  			}
 
-			 arr.pop_back();
+			arr.pop_back();
 			std::cout << std::endl  <<  "Finished reading!" << std::endl;
 
 			int i = 1;
