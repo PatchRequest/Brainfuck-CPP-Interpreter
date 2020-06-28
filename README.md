@@ -1,4 +1,4 @@
-# Brainfuck-C-Interpreter
+# Brainfuck-CPP-Interpreter
 A Brainfuck Interpreter written in C++
 
 Not the best but it works ;D
